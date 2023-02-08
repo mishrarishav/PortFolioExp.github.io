@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0f131db8f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Certifictes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openemenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web-developer/Network engineer</p>
+                <h1>Hi, I'm <span>Rishav</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------about-------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        
+                        I have complited my B.TECH in the year 2020 from the same university and in same stream which i
+                        mentioned in masters and done my SSC & HSC from CBSE and born in sept 7th 1998.
+                        I am having one year of experience in front end Development and delivered projects of all size for 
+                        consumer services.
+                        I am looking for a challenging role in a forward-thinking company where I can use my skills and
+                        knowledge to make a difference.
+                        I am a motivated individual who is always looking to learn new things and take on new
+                        challenges.
+                        In my spare time, I enjoy to work on Audio and Video Mixing Software as i have blessed with good
+                        voice for singing.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML CSS JavaScript React.JS</span><br>Web Development</li>
+                            <li><span>SQL</span><br>Data Base Management System</li>
+                            <li><span>Microsoft Certified System Expert</span><br>Managing Server/Client OS</li>
+                            <li><span>Cloud computing</span><br>Amazon web Services EC2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019</span><br>Internship at Sigma IT Solutions as Network Admin</li>
+                            <li><span>2020</span><br>Worked as freelancer in Kripa Digital Services and deployed
+                                an E-commerce website</li>
+                            <li><span>2021</span><br>Working as Front end Web-developer at ICON INDIA PVT LTD as a junior front end Web-developer</li>
+                            <li><span>2022</span><br>working with quantum computers at the level of circuits, pulses,
+                                and algorithms. using
+                                QISKIT </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Web Development training at DurgaSoft. Institute</li>
+                            <li><span>2019</span><br>MCSE CCNA & Linux Admin at Sun Screen tech. Institute</li>
+                            <li><span>2020</span><br>B.tech From RGPV Bhopal</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------services----------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Desining responsive web site with better user interface with back end support </p>
+                    <a href="https://www.coursera.org/articles/web-developer">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-server"></i>
+                    <h2>networking</h2>
+                    <p>Establish the networking environment by designing system configuration, directing system
+                        installation and defining,
+                        documenting and enforcing system standards</p>
+                    <a href="https://www.prospects.ac.uk/job-profiles/network-engineer#responsibilities">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>AWS</h2>
+                    <p> Responsible for setting up, maintaining, and evolving the cloud infrastructure of web
+                        applications in AWS infrastructure</p>
+                    <a href="https://www.simplilearn.com/aws-engineer-article">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- --------------------------------------------------Portfolio------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>web Games</h3>
+                        <p> Developed weather forcasting website and COVID-19 real time data working on REST API
+                            Games like Tic-Tac-Toe, Rock-Paper-Scissor, Snake Game(PC) based on Javascript.</p>
+                       
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/ticTakToe/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a> <p>Tic-Tac-Toe</p>
+                        
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/SnakeGame/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a><p>Snake Game(PC)</p>
+                       
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/Rock-Paper-Scissors/taskag%C4%B1tmakas.html"><i class="fa-solid fa-up-right-from-square"></i> </a> <p>Rock-Paper-Scissor</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Tools</h3>
+                        <p>Tools like- Calculator, Flex-panel, Digital-clock based on Javascript.</p>
+                       
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/Calculator/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a><p>Calculator</p>
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/JS-and-CSS-Clock/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a><p>Digital-clock</p>
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/Flex-Panel-Gallery/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a><p>Flex-panel</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Institution website</h3>
+                        <p>Institute named Practical School with Database connectivity using PHPMyAdmin</p>
+                       
+                        <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/frontpage/index.html"><i class="fa-solid fa-up-right-from-square"></i> </a><p>Practical school</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <a href="https://mishrarishav.github.io/Html_Js_projects.github.io/welcome/page2.html" class="btn" id="see-more">See more</a>
+            
+        </div>
+    </div>
+
+    
+    <!-- -------------------------------------------contact------------------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> mishrarishav360@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 8800460319</p>
+                    <div class="social-icons">
+                        <a href="https://www.secure.instagram.com/trozanrishav/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mishrarishav"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://wa.me/8800460319"><i class="fa-brands fa-square-whatsapp"></i> </a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                    <a href="https://drive.google.com/drive/folders/1JR2BaV4HnmMnAxhsDddqMqj-0rRpj8-2" download
+                        class="btn btn2">See Certificates</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="Message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <i class="fa-solid fa-file-certificate"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © RISHAV</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openemenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwx2Re50n4_bK5RDN7DrRV_9fc63_Wk1fDW3i0BDb1gu-hzlZQyPWlUgCuxKlsaxZQROw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
